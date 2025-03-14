@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Display player data on the UI
+    /// Display player data on the UI, including player name, level, health, position, and inventory.
     /// </summary>
     /// <param name="data"></param>
 
@@ -37,8 +37,7 @@ public class UIManager : MonoBehaviour
         foreach (var item in data.record.inventory)
         {
             GameObject newItem = Instantiate(inventoryItemPrefab, inventoryContainer);
-            newItem.GetComponent<TMP_Text>().text = $"• {item.itemName} x{item.quantity} (Weight: {item.weight})"; // Add bullet point
+            newItem.GetComponent<TMP_Text>().text = $"• {item.itemName} x{item.quantity} (Weight: {item.weight})";
         }
     }
-
 }

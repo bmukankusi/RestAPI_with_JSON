@@ -1,13 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-
-
-/// <summary>
-/// Player data class
-/// Store player data in a structured format
-/// </summary>
 
 [Serializable]
 public class PlayerData
@@ -40,14 +32,11 @@ public class InventoryItem
     public float weight;
 }
 
-/// <summary>
-/// Metadata class, store metadata information
-/// </summary>
 [Serializable]
 public class Metadata
 {
     public string id;
-    public bool isPrivate;
+    public bool Private;
     public string createdAt;
     public string name;
 }
